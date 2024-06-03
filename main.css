@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luckiest+Guy&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000000;
+  background-image: url(../images/Group\ 1.png);
+  background-repeat: no-repeat;
+}
+
+.main {
+  margin: auto;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 59px;
+  height: auto;
+  cursor: pointer;
+  position: absolute !important;
+  top: 61px !important;
+  left: 118px !important;
+}
+.logo #mainTitle {
+  cursor: pointer;
+  height: 74px;
+  width: 117px;
+  text-align: left;
+  position: absolute !important;
+  top: 56px !important;
+  left: 177px !important;
+  color: #f8b319;
+  font-size: 32px;
+  font-family: "Luckiest Guy";
+  font-weight: 700;
+  text-decoration: none !important;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.navbar__ul {
+  display: flex;
+  position: absolute !important;
+  top: 68px !important;
+  left: 488px !important;
+  color: #f9f9f9;
+  font-size: 24px;
+  font-family: "Lato";
+  font-weight: 700;
+  text-decoration: none !important;
+  gap: 34px;
+  justify-content: center;
+  list-style: none;
+}
+.navbar__ul a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.navbar a:hover {
+  border-bottom: 2px solid #ffd748;
+  color: #ffd748;
+}
+
+.search-container {
+  width: 315px;
+  height: 56px;
+  position: absolute !important;
+  top: 59px !important;
+  left: 943px !important;
+}
+
+#search-bar {
+  background-color: #21242d;
+  border-width: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  padding-left: 64px;
+  padding-right: 40px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  pointer-events: none;
+}
+
+.icon1 {
+  left: 25px;
+}
+
+.icon2 {
+  right: 16px;
+}
+
+.menu {
+  display: block;
+  position: absolute !important;
+  top: 166px !important;
+  left: 143px !important;
+}
+.menu a {
+  color: #f9f9f9;
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: 700;
+  text-decoration: none !important;
+}
+.menu #menu_bar {
+  margin-top: 25px;
+}
+
+/*# sourceMappingURL=main.css.map */

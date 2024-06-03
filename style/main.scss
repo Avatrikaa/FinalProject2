@@ -1,0 +1,115 @@
+@import "./variables";
+@import "./mixins";
+
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luckiest+Guy&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000000;
+  background-image: url(../images/Group\ 1.png);
+  background-repeat: no-repeat;
+}
+
+.main {
+  margin: auto;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 59px;
+    height: auto;
+    cursor: pointer;
+    @include position(absolute, 61px, 118px);
+  }
+
+  #mainTitle {
+    cursor: pointer;
+    height: 74px;
+    width: 117px;
+    text-align: left;
+    @include position(absolute, 56px, 177px);
+    @include text($yellow, 32px, "Luckiest Guy");
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+
+  &__ul {
+    display: flex;
+    @include position(absolute, 68px, 488px);
+    @include text(#f9f9f9, 24px, "Lato");
+    a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+    gap: 34px;
+    justify-content: center;
+    list-style: none;
+  }
+
+  a:hover {
+    border-bottom: 2px solid #ffd748;
+    color: #ffd748;
+  }
+}
+
+.search-container {
+  width: 315px;
+  height: 56px;
+  @include position(absolute, 59px, 943px);
+}
+
+#search-bar {
+  background-color: #21242d;
+  border-width: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  padding-left: 64px;
+  padding-right: 40px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  pointer-events: none;
+}
+
+.icon1 {
+  left: 25px;
+}
+
+.icon2 {
+  right: 16px;
+}
+
+.menu {
+  display: block;
+  @include position(absolute, 166px, 143px);
+  a {
+    @include text(#f9f9f9, 18px, "Lato");
+  }
+  #menu_bar {
+    margin-top: 25px;
+  }
+}

@@ -1,0 +1,13 @@
+@mixin text($color, $size, $font) {
+  color: $color;
+  font-size: $size;
+  font-family: $font;
+  font-weight: 700;
+  text-decoration: none !important;
+}
+
+@mixin position($position, $top, $left) {
+  position: $position !important;
+  top: $top !important;
+  left: $left !important;
+}
