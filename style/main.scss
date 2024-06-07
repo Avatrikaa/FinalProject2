@@ -49,6 +49,7 @@ body {
   align-items: center;
 
   &__ul {
+    padding-left: 0;
     display: flex;
     @include position(absolute, 68px, 488px);
     @include text(#f9f9f9, 24px, "Lato");
@@ -183,7 +184,7 @@ body {
 .carousel {
   width: 770px;
   height: 350px !important;
-  @include position(absolute, 161px, 448px);
+  @include position(absolute, 161px, 488px);
 
   img {
     height: 350px;
@@ -192,9 +193,12 @@ body {
   }
 
   p {
-    @include position(relative, 0px, 40px);
-    font-size: 48px;
-    color: #f9f9f9;
+    @include position(absolute, 40px, 40px);
+    height: 48px;
+    width: 237px;
+    margin: 0;
+    text-align: center;
+    @include text(#f9f9f9, 48px, "Lato");
   }
 
   button {

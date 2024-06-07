@@ -51,6 +51,7 @@ body {
   align-items: center;
 }
 .navbar__ul {
+  padding-left: 0;
   display: flex;
   position: absolute !important;
   top: 68px !important;
@@ -220,7 +221,7 @@ body {
   height: 350px !important;
   position: absolute !important;
   top: 161px !important;
-  left: 448px !important;
+  left: 488px !important;
 }
 .carousel img {
   height: 350px;
@@ -228,11 +229,18 @@ body {
   border-radius: 20px;
 }
 .carousel p {
-  position: relative !important;
-  top: 0px !important;
+  position: absolute !important;
+  top: 40px !important;
   left: 40px !important;
-  font-size: 48px;
+  height: 48px;
+  width: 237px;
+  margin: 0;
+  text-align: center;
   color: #f9f9f9;
+  font-size: 48px;
+  font-family: "Lato";
+  font-weight: 500;
+  text-decoration: none !important;
 }
 .carousel button {
   margin: 20px;
