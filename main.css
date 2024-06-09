@@ -12,8 +12,8 @@ body {
   width: 1440px;
   height: 2035px;
   background: #000000 !important;
-  background-image: url(../images/Group\ 1.png);
-  background-repeat: no-repeat;
+  background-image: url(../images/Group\ 1.png) !important;
+  background-repeat: no-repeat !important;
   background-position: 118.79px -39.29px;
 }
 
@@ -230,12 +230,12 @@ body {
 }
 .carousel p {
   position: absolute !important;
-  top: 40px !important;
+  top: 30px !important;
   left: 40px !important;
   height: 48px;
-  width: 237px;
+  width: 440px;
+  font-weight: 800 !important;
   margin: 0;
-  text-align: center;
   color: #f9f9f9;
   font-size: 48px;
   font-family: "Lato";
@@ -247,12 +247,243 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 15px;
-  background-color: rgba(75, 74, 74, 0.8);
+  background-color: rgba(249, 249, 249, 0.2);
   color: #f9f9f9 100%;
   width: 50px;
   height: 50px;
   margin-top: auto;
   margin-bottom: auto;
+}
+.carousel .watchlist {
+  position: absolute;
+  color: #f9f9f9;
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: 500;
+  text-decoration: none !important;
+  width: 160px !important;
+  height: 56px !important;
+  font-weight: 800;
+  bottom: 21px;
+  border: 0;
+}
+.carousel .watchNow {
+  position: absolute;
+  color: #000000;
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: 500;
+  text-decoration: none !important;
+  width: 190px !important;
+  height: 56px !important;
+  font-weight: 800;
+  background-color: #f8b319;
+  bottom: 21px;
+  right: 20px;
+  margin: 0;
+  border: 0;
+}
+.carousel .watchNow:hover {
+  background-color: #d69917;
+}
+
+.card {
+  width: 235px;
+  height: 298px !important;
+  border: 0;
+  object-fit: cover;
+}
+.card .plus {
+  position: absolute !important;
+  top: 231px !important;
+  left: 10px !important;
+  width: 57px;
+  height: 57px;
+  background-color: rgba(249, 249, 249, 0.2);
+  border-radius: 15px;
+  border: 0;
+}
+.card .info {
+  position: absolute !important;
+  top: 231px !important;
+  left: 77px !important;
+  width: 150px;
+  height: 57px;
+  background-color: #f8b319;
+  border-radius: 15px;
+  border: 0;
+  font-weight: 800 !important;
+  color: #000000;
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: 500;
+  text-decoration: none !important;
+}
+.card .info:hover {
+  background-color: #d69917;
+}
+
+#loki {
+  background-image: url("../images/Loki.png");
+  position: absolute !important;
+  top: 631px !important;
+  left: 488px !important;
+  border-radius: 25px !important;
+  background-size: cover;
+  border: 0;
+}
+
+#chernobyl {
+  background-image: url("../images/Chernobyl.png");
+  position: absolute !important;
+  top: 631px !important;
+  left: 755px !important;
+  border-radius: 25px !important;
+  background-size: cover;
+  border: 0;
+}
+
+#ricky {
+  background-image: url("../images/Rick and Morty.png");
+  position: absolute !important;
+  top: 631px !important;
+  left: 1034px !important;
+  border-radius: 25px !important;
+  background-size: cover;
+  border: 0;
+}
+
+.movies h2 {
+  position: absolute !important;
+  top: 571px !important;
+  left: 488px !important;
+  color: #f9f9f9;
+  font-size: 30px;
+  font-family: "Lato";
+  font-weight: 500;
+  text-decoration: none !important;
+  font-weight: 800;
+}
+.movies .movieName {
+  position: absolute !important;
+  top: 21px !important;
+  left: 21px !important;
+  color: #f9f9f9;
+  font-size: 24px;
+  font-family: "Lato";
+  font-weight: 500;
+  text-decoration: none !important;
+  font-weight: 800;
+}
+.movies .episodes {
+  position: absolute !important;
+  top: 199px !important;
+  left: 10px !important;
+  color: #f9f9f9;
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: 500;
+  text-decoration: none !important;
+  opacity: 70%;
+}
+.movies .genre {
+  position: absolute !important;
+  top: 199px !important;
+  left: 143px !important;
+  color: #f9f9f9;
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: 500;
+  text-decoration: none !important;
+  opacity: 70%;
+}
+
+.topRatedMovie {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 953px;
+  gap: 34px;
+  position: absolute !important;
+  top: 280px !important;
+  left: 77px !important;
+}
+
+.ratedMovies h2 {
+  position: absolute !important;
+  top: 172px !important;
+  left: 58px !important;
+  color: #f9f9f9;
+  font-size: 48px;
+  font-family: "Lato";
+  font-weight: 500;
+  text-decoration: none !important;
+  font-weight: 800;
+}
+
+.movieCard {
+  border: 0;
+  border-radius: 17px 17px 0 0;
+  overflow: hidden;
+  color: #ffffff;
+  font-size: 29.24px;
+  font-family: "Lato";
+  font-weight: 500;
+  text-decoration: none !important;
+  width: 295px !important;
+  height: 580px !important;
+}
+.movieCard h3 {
+  margin-top: 15px;
+}
+
+.movieCard img {
+  width: 100%;
+  height: 72%;
+}
+
+.movie-container {
+  position: absolute !important;
+  top: 967px !important;
+  left: 82px !important;
+  width: 1065px;
+  height: 922px;
+}
+
+.loadMoreButton {
+  background-color: #f8b319;
+  color: #000000;
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: 500;
+  text-decoration: none !important;
+  border: 0;
+  border-radius: 15px;
+  width: 150px;
+  height: 57px;
+  font-weight: 800 !important;
+  margin: 20px auto;
+}
+
+.rating {
+  display: flex;
+  height: 21px;
+  gap: 7px;
+}
+
+.rating img {
+  height: 100%;
+  width: 21px;
+  margin: 0;
+}
+
+#halfstar {
+  width: 10.5px;
+  margin: 0;
+}
+
+.loadMoreButton:hover {
+  background-color: #d69917;
 }
 
 /*# sourceMappingURL=main.css.map */

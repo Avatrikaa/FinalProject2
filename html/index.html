@@ -116,24 +116,34 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="caption-caption d-none d-md-block">
-              <p>The Crown</p>
-            </div>
-            <img src="../images/queen.jfif" class="d-block w-100" alt="..." />
+            <p>The Crown</p>
+            <img
+              src="../images/queen.jfif"
+              class="d-block w-100"
+              alt="The Crown"
+            />
+            <button class="watchlist">Watchlist</button>
+            <button class="watchNow">Watch Now</button>
           </div>
           <div class="carousel-item">
+            <p>Bridgerton</p>
             <img
               src="../images/bridgerton.jpg"
               class="d-block w-100"
-              alt="..."
+              alt="Bridgerton"
             />
+            <button class="watchlist">Watchlist</button>
+            <button class="watchNow">Watch Now</button>
           </div>
           <div class="carousel-item">
+            <p>Ginny & Georgia</p>
             <img
               src="../images/Ginny&Georgia.jpg"
               class="d-block w-100"
-              alt="..."
+              alt="Ginny & Georgia"
             />
+            <button class="watchlist">Watchlist</button>
+            <button class="watchNow">Watch Now</button>
           </div>
         </div>
         <button
@@ -158,6 +168,87 @@
     </div>
     <!-- Carousel -->
 
+    <section class="movies">
+      <h2>Movies</h2>
+      <div class="card" id="loki">
+        <p class="movieName">Loki</p>
+        <p class="episodes">6 Ep</p>
+        <p class="genre">Superhero</p>
+        <button class="plus">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="17"
+            height="17"
+            fill="#F9F9F9"
+            class="bi bi-plus"
+            viewBox="0 0 17 17"
+          >
+            <path
+              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+              transform="scale(2.125)"
+              transform-origin="center"
+            />
+          </svg>
+        </button>
+        <button class="info">More info</button>
+      </div>
+
+      <div class="card" id="chernobyl">
+        <p class="movieName">Chernobyl</p>
+        <p class="episodes">5 Ep</p>
+        <p class="genre">Mini Series</p>
+        <button class="plus">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="17"
+            height="17"
+            fill="#F9F9F9"
+            class="bi bi-plus"
+            viewBox="0 0 17 17"
+          >
+            <path
+              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+              transform="scale(2.125)"
+              transform-origin="center"
+            />
+          </svg>
+        </button>
+        <button class="info">More info</button>
+      </div>
+
+      <div class="card" id="ricky">
+        <p class="movieName">Rick and Morty</p>
+        <p class="episodes">49 Ep</p>
+        <p class="genre">Fantasy</p>
+        <button class="plus">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="17"
+            height="17"
+            fill="#F9F9F9"
+            class="bi bi-plus"
+            viewBox="0 0 17 17"
+          >
+            <path
+              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+              transform="scale(2.125)"
+              transform-origin="center"
+            />
+          </svg>
+        </button>
+        <button class="info">More info</button>
+      </div>
+    </section>
+
+    <section class="ratedMovies">
+      <div class="movie-container">
+        <h2>Top Rated Movies</h2>
+        <div class="topRatedMovie" id="topMovie"></div>
+        <button class="loadMoreButton" id="load-more-button">Load More</button>
+      </div>
+    </section>
+
+    <script src="../js/script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

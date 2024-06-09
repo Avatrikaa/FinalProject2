@@ -16,8 +16,8 @@ body {
   width: 1440px;
   height: 2035px;
   background: #000000 !important;
-  background-image: url(../images/Group\ 1.png);
-  background-repeat: no-repeat;
+  background-image: url(../images/Group\ 1.png) !important;
+  background-repeat: no-repeat !important;
   background-position: 118.79px -39.29px;
 }
 
@@ -193,11 +193,12 @@ body {
   }
 
   p {
-    @include position(absolute, 40px, 40px);
+    @include position(absolute, 30px, 40px);
     height: 48px;
-    width: 237px;
+    width: 440px;
+    font-weight: 800 !important;
     margin: 0;
-    text-align: center;
+    // text-align: center;
     @include text(#f9f9f9, 48px, "Lato");
   }
 
@@ -206,11 +207,189 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 15px;
-    background-color: rgb(75, 74, 74, 80%);
+    background-color: rgb(249, 249, 249, 20%);
     color: #f9f9f9 100%;
     width: 50px;
     height: 50px;
     margin-top: auto;
     margin-bottom: auto;
   }
+
+  .watchlist {
+    position: absolute;
+    @include text(#f9f9f9, 18px, "Lato");
+    width: 160px !important;
+    height: 56px !important;
+    font-weight: 800;
+    bottom: 21px;
+    border: 0;
+  }
+
+  .watchNow {
+    position: absolute;
+    @include text(#000000, 18px, "Lato");
+    width: 190px !important;
+    height: 56px !important;
+    font-weight: 800;
+    background-color: #f8b319;
+    bottom: 21px;
+    right: 20px;
+    margin: 0;
+    border: 0;
+  }
+
+  .watchNow:hover {
+    background-color: #d69917;
+  }
+}
+
+.card {
+  width: 235px;
+  height: 298px !important;
+  border: 0;
+  object-fit: cover;
+  .plus {
+    @include position(absolute, 231px, 10px);
+    width: 57px;
+    height: 57px;
+    background-color: rgb(249, 249, 249, 20%);
+    border-radius: 15px;
+    border: 0;
+  }
+
+  .info {
+    @include position(absolute, 231px, 77px);
+    width: 150px;
+    height: 57px;
+    background-color: #f8b319;
+    border-radius: 15px;
+    border: 0;
+    font-weight: 800 !important;
+    @include text(#000000, 18px, "Lato");
+  }
+
+  .info:hover {
+    background-color: #d69917;
+  }
+}
+
+#loki {
+  background-image: url("../images/Loki.png");
+  @include position(absolute, 631px, 488px);
+  border-radius: 25px !important;
+  background-size: cover;
+  border: 0;
+}
+
+#chernobyl {
+  background-image: url("../images/Chernobyl.png");
+  @include position(absolute, 631px, 755px);
+  border-radius: 25px !important;
+  background-size: cover;
+  border: 0;
+}
+
+#ricky {
+  background-image: url("../images/Rick\ and\ Morty.png");
+  @include position(absolute, 631px, 1034px);
+  border-radius: 25px !important;
+  background-size: cover;
+  border: 0;
+}
+
+.movies {
+  h2 {
+    @include position(absolute, 571px, 488px);
+    @include text(#f9f9f9, 30px, "Lato");
+    font-weight: 800;
+  }
+
+  .movieName {
+    @include position(absolute, 21px, 21px);
+    @include text(#f9f9f9, 24px, "Lato");
+    font-weight: 800;
+  }
+
+  .episodes {
+    @include position(absolute, 199px, 10px);
+    @include text(#f9f9f9, 18px, "Lato");
+    opacity: 70%;
+  }
+
+  .genre {
+    @include position(absolute, 199px, 143px);
+    @include text(#f9f9f9, 18px, "Lato");
+    opacity: 70%;
+  }
+}
+
+.topRatedMovie {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 953px;
+  gap: 34px;
+  @include position(absolute, 280px, 77px);
+}
+
+.ratedMovies h2 {
+  @include position(absolute, 172px, 58px);
+  @include text(#f9f9f9, 48px, "Lato");
+  font-weight: 800;
+}
+
+.movieCard {
+  border: 0;
+  border-radius: 17px 17px 0 0;
+  overflow: hidden;
+  @include text(#ffffff, 29.24px, "Lato");
+  width: 295px !important;
+  height: 580px !important;
+
+  h3 {
+    margin-top: 15px;
+  }
+}
+
+.movieCard img {
+  width: 100%;
+  height: 72%;
+}
+
+.movie-container {
+  @include position(absolute, 967px, 82px);
+  width: 1065px;
+  height: 922px;
+}
+
+.loadMoreButton {
+  background-color: #f8b319;
+  @include text(#000000, 18px, "Lato");
+  border: 0;
+  border-radius: 15px;
+  width: 150px;
+  height: 57px;
+  font-weight: 800 !important;
+  margin: 20px auto;
+}
+
+.rating {
+  display: flex;
+  height: 21px;
+  gap: 7px;
+}
+
+.rating img {
+  height: 100%;
+  width: 21px;
+  margin: 0;
+}
+
+#halfstar {
+  width: 10.5px;
+  margin: 0;
+}
+
+.loadMoreButton:hover {
+  background-color: #d69917;
 }
