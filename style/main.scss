@@ -85,6 +85,7 @@ body {
   padding-right: 40px;
   box-sizing: border-box;
   position: relative;
+  color: #f9f9f9;
 }
 
 .icon {
@@ -127,6 +128,10 @@ body {
       margin-right: 15px;
     }
   }
+
+  a:hover {
+    color: #ffd748;
+  }
 }
 
 .library {
@@ -143,6 +148,9 @@ body {
       @include text(rgb(249, 249, 249, 100%), 18px, "Lato");
       text-decoration: none;
       color: #f9f9f9;
+    }
+    a:hover {
+      color: #ffd748;
     }
   }
 
@@ -180,6 +188,10 @@ body {
       margin-right: 15px;
     }
   }
+
+  a:hover {
+    color: #ffd748;
+  }
 }
 
 .carousel {
@@ -199,7 +211,6 @@ body {
     width: 440px;
     font-weight: 800 !important;
     margin: 0;
-    // text-align: center;
     @include text(#f9f9f9, 48px, "Lato");
   }
 
@@ -429,4 +440,46 @@ body {
 
 .plot {
   @include text(#ffffff, 14px, "Lato");
+}
+
+.movie-item {
+  width: 315px;
+  padding: 10px 0;
+  border-bottom: 1px solid #cccccc56;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  margin-bottom: 3px;
+  cursor: pointer;
+  border: none;
+}
+
+.movie-img {
+  padding-left: 20px;
+  width: 80px;
+  height: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.movie-title {
+  @include text(#f9f9f9, 16px, "Lato");
+
+  font-weight: bold;
+}
+
+.popup {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  z-index: 1;
+}
+
+.movie-list {
+  position: absolute;
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
 }
