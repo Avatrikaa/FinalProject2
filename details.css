@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luckiest+Guy&display=swap");
+*,
+*::after,
+*::before {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  display: flex;
+  background: #000000 !important;
+  background-repeat: no-repeat !important;
+  justify-content: center;
+  background-size: cover;
+  width: 1440px;
+  height: 1024px;
+}
+
+.backgroundimg {
+  object-fit: cover;
+  filter: brightness(25%);
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating {
+  position: absolute !important;
+  top: 384px !important;
+  left: 100px !important;
+  display: flex;
+  height: 38px;
+  gap: 12.67px;
+}
+
+.rating img {
+  height: 100%;
+  width: 38px;
+  margin: 0;
+}
+
+#halfstar {
+  width: 19px;
+  margin: 0;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 68px;
+  font-family: "Lato";
+  font-weight: 500;
+  text-decoration: none !important;
+  position: absolute !important;
+  top: 281px !important;
+  left: 100px !important;
+}
+
+.plotText {
+  height: 197px;
+  width: 652px;
+  position: absolute !important;
+  top: 557px !important;
+  left: 100px !important;
+  color: #ffffff;
+  font-size: 30px;
+  font-family: "Lato";
+  font-weight: 500;
+  text-decoration: none !important;
+}
+
+#poster {
+  height: 569px;
+  width: 452px;
+  position: absolute !important;
+  top: 281px !important;
+  left: 864px !important;
+  border: none;
+  border-radius: 20px;
+}
+
+button {
+  margin: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 15px;
+  background-color: rgba(249, 249, 249, 0.2);
+  color: #f9f9f9;
+  width: 241px;
+  height: 71px;
+  margin-top: 24px;
+  margin-bottom: auto;
+  border: none;
+}
+
+.watchlist {
+  cursor: pointer;
+  position: absolute !important;
+  top: 778px !important;
+  left: 107px !important;
+  color: #f9f9f9;
+  font-size: 22px;
+  font-family: "Lato";
+  font-weight: 500;
+  text-decoration: none !important;
+  width: 160px !important;
+  height: 56px !important;
+  font-weight: 800;
+}
+
+.watchlist:hover {
+  background-color: rgba(249, 249, 249, 0.097);
+}
+
+.watchNow {
+  cursor: pointer;
+  position: absolute !important;
+  top: 778px !important;
+  left: 355.5px !important;
+  color: #000000;
+  font-size: 22px;
+  font-family: "Lato";
+  font-weight: 500;
+  text-decoration: none !important;
+  width: 190px !important;
+  height: 56px !important;
+  font-weight: 800;
+  background-color: #f8b319;
+}
+
+.watchNow:hover {
+  background-color: #d69917;
+}
+
+#backButton {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 220px;
+  height: 50px;
+  color: #ffffff;
+  font-size: 28px;
+  font-family: "Lato";
+  font-weight: 500;
+  text-decoration: none !important;
+  position: absolute !important;
+  top: 172px !important;
+  left: 50px !important;
+}
+#backButton button {
+  cursor: pointer;
+  margin: auto;
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  opacity: 20%;
+}
+#backButton button:hover {
+  background-color: rgba(249, 249, 249, 0.097);
+}
+
+#imdb {
+  position: absolute !important;
+  top: 460px !important;
+  left: 107.17px !important;
+  height: 30px;
+}
+
+#topRated {
+  text-align: center;
+  justify-content: center;
+  padding-top: 6.5px;
+  color: #000000;
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: 500;
+  text-decoration: none !important;
+  position: absolute !important;
+  top: 281px !important;
+  left: 1147px !important;
+  width: 169px;
+  height: 35px;
+  border-radius: 0 20px 0 20px;
+  background-color: #f8b319;
+  font-weight: 700;
+  z-index: 10;
+}
+
+/*# sourceMappingURL=details.css.map */

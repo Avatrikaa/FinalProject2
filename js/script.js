@@ -9,15 +9,15 @@ const fetchMovies = async () => {
       "https://www.omdbapi.com/?apikey=df6f6c34&s=movie&page=1"
     );
     const data = await response.json();
-    console.log(data); // Log the response data for inspection
+    console.log(data);
     if (data.Search) {
-      movies = data.Search; // Adjust based on the actual response structure
+      movies = data.Search;
     } else {
       console.error("Unexpected response structure:", data);
     }
     renderMovies();
   } catch (error) {
-    console.error("Error fetching", error);
+    console.error("Error fetching movies:", error);
   }
 };
 
@@ -35,19 +35,65 @@ function starRating(rating) {
   return stars;
 }
 
-const renderMovies = () => {
+const movieDetails = async (imdbID) => {
+  try {
+    const response = await fetch(
+      `http://www.omdbapi.com/?apikey=df6f6c34&i=${imdbID}&plot=full`
+    );
+    const data = await response.json();
+    if (data.Response === "True") {
+      const detailsTab = window.open("movieDetails.html", "_Blank");
+      detailsTab.onload = function () {
+        detailsTab.document.getElementById("backgroundposter").src =
+          data.Poster;
+        const movieDitail = detailsTab.document.getElementById("detailsMain");
+        const movieCardItem = document.createElement("div");
+        movieCardItem.classList.add("movieCardItem");
+        movieCardItem.classList.add("movie-card");
+        movieCardItem.innerHTML = `
+          <h1>${data.Title}</h1>
+          <div class="rating">${starRating(data.imdbRating)}</div>
+          <div class="plotText"><p>${data.Plot}</p></div>
+          <img  id="poster" src=${data.Poster} alt="movie Poster"/>`;
+        movieDitail.appendChild(movieCardItem);
+      };
+    }
+  } catch {
+    console.error("Error fetching movie details:", error);
+  }
+};
+
+const renderMovies = async () => {
   topMovies.innerHTML = "";
-  const rating = starRating(7.74);
   if (Array.isArray(movies)) {
-    movies.slice(0, visibleMovies).forEach((movie) => {
-      const card = document.createElement("div");
-      card.classList.add("movieCard");
-      card.innerHTML = `
-        <img src="${movie.Poster}" alt="${movie.Title}"/>
-        <h3>${movie.Title}</h3>
-        <div class="rating">${rating}</div>`;
-      topMovies.appendChild(card);
-    });
+    for (const movie of movies.slice(0, visibleMovies)) {
+      try {
+        const response = await fetch(
+          `http://www.omdbapi.com/?apikey=df6f6c34&i=${movie.imdbID}&plot=full`
+        );
+        const data = await response.json();
+        const rating = starRating(data.imdbRating);
+        console.log(data.Released);
+        const card = document.createElement("div");
+        card.classList.add("movieCard");
+        card.innerHTML = `
+          <img src="${movie.Poster}" alt="${movie.Title}"/>
+          <h3>${movie.Title}</h3>
+          <div class="rating">${rating}</div>
+          <p class="releaseDate">${data.Released}</p>
+          <p class="plot">${data.Plot}</p>
+          <p id="imdbRating">${data.imdbRating}</p>`;
+        card.addEventListener("click", () => {
+          movieDetails(movie.imdbID);
+        });
+        topMovies.appendChild(card);
+      } catch (error) {
+        console.error(
+          `Error fetching details for movie ${movie.Title}:`,
+          error
+        );
+      }
+    }
     topMovies.appendChild(loadMoreButton);
   } else {
     console.error("Movies is not an array:", movies);

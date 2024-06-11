@@ -1,0 +1,163 @@
+@import "./mixins";
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luckiest+Guy&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  display: flex;
+  background: #000000 !important;
+  background-repeat: no-repeat !important;
+  justify-content: center;
+  background-size: cover;
+  width: 1440px;
+  height: 1024px;
+}
+
+.backgroundimg {
+  object-fit: cover;
+  filter: brightness(25%);
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating {
+  @include position(absolute, 384px, 100px);
+  display: flex;
+  height: 38px;
+  gap: 12.67px;
+}
+
+.rating img {
+  height: 100%;
+  width: 38px;
+  margin: 0;
+}
+
+#halfstar {
+  width: 19px;
+  margin: 0;
+}
+
+h1 {
+  @include text(#ffffff, 68px, "Lato");
+  @include position(absolute, 281px, 100px);
+}
+
+.plotText {
+  height: 197px;
+  width: 652px;
+  @include position(absolute, 557px, 100px);
+  @include text(#ffffff, 30px, "Lato");
+}
+
+#poster {
+  height: 569px;
+  width: 452px;
+  @include position(absolute, 281px, 864px);
+  border: none;
+  border-radius: 20px;
+}
+
+button {
+  margin: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 15px;
+  background-color: rgb(249, 249, 249, 20%);
+  color: #f9f9f9;
+  width: 241px;
+  height: 71px;
+  margin-top: 24px;
+  margin-bottom: auto;
+  border: none;
+}
+
+.watchlist {
+  cursor: pointer;
+  @include position(absolute, 778px, 107px);
+  @include text(#f9f9f9, 22px, "Lato");
+  width: 160px !important;
+  height: 56px !important;
+  font-weight: 800;
+}
+
+.watchlist:hover {
+  background-color: rgba(249, 249, 249, 0.097);
+}
+
+.watchNow {
+  cursor: pointer;
+  @include position(absolute, 778px, 355.5px);
+  @include text(#000000, 22px, "Lato");
+  width: 190px !important;
+  height: 56px !important;
+  font-weight: 800;
+  background-color: #f8b319;
+}
+
+.watchNow:hover {
+  background-color: #d69917;
+}
+
+#backButton {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 220px;
+  height: 50px;
+  @include text(#ffffff, 28px, "Lato");
+  @include position(absolute, 172px, 50px);
+
+  button {
+    cursor: pointer;
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    opacity: 20%;
+  }
+  button:hover {
+    background-color: rgba(249, 249, 249, 0.097);
+  }
+}
+
+#imdb {
+  @include position(absolute, 460px, 107.17px);
+  height: 30px;
+}
+
+#topRated {
+  text-align: center;
+  justify-content: center;
+  padding-top: 6.5px;
+  @include text(#000000, 18px, "Lato");
+  @include position(absolute, 281px, 1147px);
+  width: 169px;
+  height: 35px;
+  border-radius: 0 20px 0 20px;
+  background-color: #f8b319;
+  font-weight: 700;
+  z-index: 10;
+}

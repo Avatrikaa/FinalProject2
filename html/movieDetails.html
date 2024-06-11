@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie</title>
+    <link rel="stylesheet" href="../details.css" />
+  </head>
+  <body>
+    <img
+      id="backgroundposter"
+      class="backgroundimg"
+      src=""
+      alt="Movie Poster"
+    />
+    <div class="main" id="detailsMain">
+      <img id="imdb" src="../images/imdb.png" alt="imdb logo" />
+      <div id="backButton">
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+            <path
+              d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z"
+            />
+          </svg>
+        </button>
+        <p>Back home</p>
+      </div>
+      <button class="watchlist">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="17"
+          height="17"
+          fill="#F9F9F9"
+          class="bi bi-plus"
+          viewBox="0 0 17 17"
+        >
+          <path
+            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+            transform="scale(2.125)"
+            transform-origin="center"
+          />
+        </svg>
+        Watchlist
+      </button>
+      <button class="watchNow">Watch Now</button>
+      <p id="topRated">Top Rated</p>
+    </div>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
