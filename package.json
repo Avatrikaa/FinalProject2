@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch ./style/main.scss:main.css",
-    "sass2": "sass2 --watch ./style/details.scss:details.css"
+    "sass2": "sass2 --watch ./style/main.scss:main.css",
+    "sass": "sass --watch ./style/details.scss:details.css"
   },
   "author": "Tina Akirtava",
   "license": "ISC"

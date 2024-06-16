@@ -41,7 +41,7 @@ body {
 }
 
 .rating {
-  @include position(absolute, 384px, 100px);
+  @include position(absolute, 450px, 100px);
   display: flex;
   height: 38px;
   gap: 12.67px;
@@ -61,19 +61,20 @@ body {
 h1 {
   @include text(#ffffff, 68px, "Lato");
   @include position(absolute, 281px, 100px);
+  width: 960px;
 }
 
 .plotText {
-  height: 197px;
+  height: 197px !important;
   width: 652px;
   @include position(absolute, 557px, 100px);
-  @include text(#ffffff, 30px, "Lato");
+  @include text(#ffffff, 20px, "Lato");
 }
 
 #poster {
-  height: 569px;
-  width: 452px;
-  @include position(absolute, 281px, 864px);
+  height: 515px;
+  width: 409px;
+  @include position(absolute, 281px, 906.92px);
   border: none;
   border-radius: 20px;
 }
@@ -94,7 +95,7 @@ button {
 
 .watchlist {
   cursor: pointer;
-  @include position(absolute, 778px, 107px);
+  @include position(absolute, 848px, 107px);
   @include text(#f9f9f9, 22px, "Lato");
   width: 160px !important;
   height: 56px !important;
@@ -107,7 +108,7 @@ button {
 
 .watchNow {
   cursor: pointer;
-  @include position(absolute, 778px, 355.5px);
+  @include position(absolute, 848px, 355.5px);
   @include text(#000000, 22px, "Lato");
   width: 190px !important;
   height: 56px !important;
@@ -144,7 +145,7 @@ button {
 }
 
 #imdb {
-  @include position(absolute, 460px, 107.17px);
+  @include position(absolute, 510px, 100px);
   height: 30px;
 }
 

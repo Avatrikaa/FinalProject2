@@ -39,7 +39,7 @@ body {
 
 .rating {
   position: absolute !important;
-  top: 384px !important;
+  top: 450px !important;
   left: 100px !important;
   display: flex;
   height: 38px;
@@ -66,27 +66,28 @@ h1 {
   position: absolute !important;
   top: 281px !important;
   left: 100px !important;
+  width: 960px;
 }
 
 .plotText {
-  height: 197px;
+  height: 197px !important;
   width: 652px;
   position: absolute !important;
   top: 557px !important;
   left: 100px !important;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 20px;
   font-family: "Lato";
   font-weight: 500;
   text-decoration: none !important;
 }
 
 #poster {
-  height: 569px;
-  width: 452px;
+  height: 515px;
+  width: 409px;
   position: absolute !important;
   top: 281px !important;
-  left: 864px !important;
+  left: 906.92px !important;
   border: none;
   border-radius: 20px;
 }
@@ -108,7 +109,7 @@ button {
 .watchlist {
   cursor: pointer;
   position: absolute !important;
-  top: 778px !important;
+  top: 848px !important;
   left: 107px !important;
   color: #f9f9f9;
   font-size: 22px;
@@ -127,7 +128,7 @@ button {
 .watchNow {
   cursor: pointer;
   position: absolute !important;
-  top: 778px !important;
+  top: 848px !important;
   left: 355.5px !important;
   color: #000000;
   font-size: 22px;
@@ -175,8 +176,8 @@ button {
 
 #imdb {
   position: absolute !important;
-  top: 460px !important;
-  left: 107.17px !important;
+  top: 510px !important;
+  left: 100px !important;
   height: 30px;
 }
 
